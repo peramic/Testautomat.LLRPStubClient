@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+	<info organisation="havis/test/suite" module="llrp-stub-client" default="true" />
+
+	<configurations>
+		<conf name="default" />
+	</configurations>
+
+	<dependencies>
+		<dependency org="havis/test/suite" name="api" rev="${havis.version}" conf="default" />
+		<dependency org="havis/test/suite" name="common" rev="${havis.version}" conf="default" />
+		<dependency org="havis/test/suite" name="core" rev="${havis.version}" conf="default" />
+		
+		<dependency org="havis/net/rest" name="rf" rev="${havis.version}" conf="default" />
+		<dependency org="havis/device/test" name="hardware" rev="${havis.version}" conf="default" transitive="false" />
+		
+		<dependency org="com/fasterxml/jackson/core" name="jackson-databind" rev="${jackson.version}" conf="default" />
+		<dependency org="com/fasterxml/jackson/module" name="jackson-module-jaxb-annotations" rev="${jackson.version}" conf="default" />
+		<dependency org="commons-cli" name="commons-cli" rev="${commons-cli.version}" conf="default" />
+		<dependency org="javax/ws/rs" name="javax.ws.rs-api" rev="${javax.ws.rs-api.version}" conf="default" />
+		<dependency org="net/sf/saxon" name="Saxon-HE" rev="${Saxon-HE.version}" conf="default" />
+		<dependency org="org/slf4j" name="slf4j-api" rev="${slf4j-api.version}" conf="default" />
+		<dependency org="org/springframework" name="spring-context" rev="${spring-context.version}" conf="default" />
+		<dependency org="org/testng" name="testng" rev="latest.integration" conf="default" />
+		<dependency org="org/jmockit" name="jmockit" rev="latest.integration" conf="default" />
+		<dependency org="org/jmockit" name="jmockit-coverage" rev="latest.integration" conf="default" />
+		<dependency org="org/antlr" name="ST4" rev="${ST4.version}" conf="default" />
+	</dependencies>
+
+</ivy-module>
